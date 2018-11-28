@@ -24,13 +24,11 @@ jobs:
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum ".circleci/conda_env.yml" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
 
       - run:
           name: install conda and dependencies
           command: |
-            test -d ~/miniconda3 || exit 0
+            test -d ~/miniconda3 && exit 0
             echo "Installing a fresh version of Miniconda."
             MINICONDA_URL="https://repo.continuum.io/miniconda"
             MINICONDA_FILE="Miniconda3-latest-Linux-x86_64.sh"
