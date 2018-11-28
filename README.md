@@ -6,6 +6,11 @@ A collection of diagnostic and interpolation routines for use with output from t
 This package provides over 30 diagnostic calculations, several interpolation routines, and utilities to help with plotting via cartopy, basemap, or PyNGL. The functionality is similar to what is provided by the NCL WRF package.
 
 
+Build Status
+----------------------------
+
+    [![CircleCI](https://circleci.com/gh/khallock/wrf-python.svg?style=svg)](https://circleci.com/gh/khallock/wrf-python)
+
 Installation
 ----------------------------
 
